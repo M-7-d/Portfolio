@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M7D</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+<link rel="stylesheet" href="style.css"></head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">M7D</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="home" class="hero">
+            <div class="content">
+                <h1>Hello, I'm</h1>
+                <h1>Muhammed Al Haddad</h1>
+                <h2>I am a Full Stack and Mobile Developer</h2>
+                <p>Computer Engineering Student with diverse experience as an HR Assistant. seeking to
+                    transition into Full Stack Web Development and Mobile Development roles. Combining
+                    technical expertise from my engineering background with interpersonal skills honed in HR
+                    assionate about creating seamless user experiences across web and mobile platforms, with
+                    a particular interest in Flutter for cross-platform mobile development.
+                    </p>
+                <div class="social-icons">
+                    <a target="_blank" href="https://github.com/M-7-d"><i class="fab fa-github"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/m.haddad.7"><i class="fab fa-instagram"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/muhammed-al-haddad-472913277/"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <button class="cta-button" onclick="downloadCV()">Download CV</button>
+            </div>
+            <div class="profile-image"> <img src="1.jpg" alt=""></div>
+        </section>
+        <section id="skills" class="skills">
+            <h2>My Skills</h2>
+            <div class="skill-list">
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                    <div class="skill-name">HTML5</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                    <div class="skill-name">CSS3</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-js"></i></div>
+                    <div class="skill-name">JavaScript</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-react"></i></div>
+                    <div class="skill-name">React</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-bootstrap"></i></div>
+                    <div class="skill-name">Bootstrap</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <div class="skill-name">Flutter</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <div class="skill-name">MongoDB</div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                    <div class="skill-name">Firebase</div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-users"></i></div>
+                    <div class="skill-name">HRMS</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>My Projects</h2>
+            <div class="project-list">
+                <div class="project-item">
+                    <div class="project-icon"><i class="fas fa-code"></i></div>
+                    <div class="project-name">Dental Clinic Appointment Booking System</div>
+                    <p>This project is a web-based appointment
+                        booking system designed specifically for dental clinics. It helps manage patient
+                        appointments efficiently by providing an easy-to-use interface for both users and
+                        administrators.</p>
+                        <a href="https://dental-clinic-muhammed.vercel.app/" target="_blank">
+                            <button class="project-button">View Project</button>
+                        </a>
+                </div>
+                <div class="project-item">
+                    <div class="project-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <div class="project-name">Flutter eCommerce App with Firebase</div>
+                    <p>This project is a cross-platform eCommerce app
+                        built with Flutter and integrated with Firebase. offering flexible state management with getX,
+                        and ensuring optimal performance across Android and iOS.multi-authentication
+                        options.dynamic layouts, reusable widgets, and animated onboarding screens.</p>
+                        <a href="https://github.com/M-7-d/E-Commerece-App/tree/master/En_ecommerce" target="_blank">
+                            <button class="project-button">View Project</button>
+                        </a>
+                </div>
+                <div class="project-item">
+                    <div class="project-icon"><i class="fas fa-rocket"></i></div>
+                    <div class="project-name">Portfolio Website</div>
+                    <p>A sleek personal portfolio showcasing web and mobile development skills.</p>
+                    <a href="https://example.com/appointment-booking" target="_blank">
+                        <button class="project-button">View Project</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <footer id="contact">
+            <p>Phone: <a href="tel:+905346846750">+90 534 684 67 50</a></p>
+            <p>Email: <a href="mailto:mmuhammedalhaddad14@gmail.com">muhammedalhaddad14@gmail.com</a></p>
+            <p>Address: Gaziantep, Turkey</p>
+        </footer>
+    </div>
+    <script>
+        function downloadCV() {
+            const link = document.createElement('a');
+            link.href = 'my_cv.pdf';
+            link.target = '_blank`'
+            link.download = 'M7D.pdf';
+            link.click();
+        }
+    </script>
+</body>
+
+</html>
+
